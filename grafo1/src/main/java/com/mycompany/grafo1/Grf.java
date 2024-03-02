@@ -22,8 +22,8 @@ public class Grf <TIPO>{
         this.arestas = new ArrayList<Aresta<TIPO>> ();
     }
     
-    public void adicionarVertice(TIPO dado){
-        Vertice<TIPO> novoVertice = new Vertice<TIPO> (dado);
+    public void adicionarVertice(TIPO dado, Double tdm){
+        Vertice<TIPO> novoVertice = new Vertice<TIPO> (dado, tdm);
         this.vertices.add(novoVertice);
     }
     

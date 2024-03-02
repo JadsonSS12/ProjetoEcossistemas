@@ -13,15 +13,26 @@ import java.util.ArrayList;
  */
 public class Vertice<TIPO> {
     private TIPO dado;
+    private Double TaxaDeMortalidade;
+
     private ArrayList<Aresta<TIPO>> arestasEntrada;
     private ArrayList <Aresta<TIPO>> arestasSaida;
     
-    public Vertice(TIPO valor){
+    public Vertice(TIPO valor, Double TDM){
         this.dado = valor;
+        this.TaxaDeMortalidade = TDM;
         this.arestasEntrada = new ArrayList<Aresta<TIPO>> ();
         this.arestasSaida = new ArrayList<Aresta<TIPO>>  ();
     }
 
+     public Double getTaxaDeMortalidade() {
+        return TaxaDeMortalidade;
+    }
+
+    public void setTaxaDeMortalidade(Double TaxaDeMortalidade) {
+        this.TaxaDeMortalidade = TaxaDeMortalidade;
+    }
+    
     public TIPO getDado() {
         return dado;
     }
