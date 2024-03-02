@@ -14,8 +14,16 @@ class Animal {
         return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public String getHabitat() {
         return habitat;
+    }
+
+    public void setHabitat(String habitat) {
+        this.habitat = habitat;
     }
 }
 
@@ -30,15 +38,29 @@ class Ecossistema{
         this.habitat = habitat;
     }
 
-    public float getTaxaDeMortalidade(){
-        return taxaDeMortalidade;
-    }
-
-    public String getTipo(){
+    public String getTipo() {
         return tipo;
     }
 
-    public String getHabitat(){
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public float getTaxaDeMortalidade() {
+        return taxaDeMortalidade;
+    }
+
+    public void setTaxaDeMortalidade(float taxaDeMortalidade) {
+        this.taxaDeMortalidade = taxaDeMortalidade;
+    }
+
+    public String getHabitat() {
         return habitat;
     }
+
+    public void setHabitat(String habitat) {
+        this.habitat = habitat;
+    }
 }
+
+
