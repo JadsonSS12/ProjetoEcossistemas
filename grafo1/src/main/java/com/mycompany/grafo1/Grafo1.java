@@ -13,7 +13,7 @@ public class Grafo1 {
 
     public static void main(String[] args) {
         Vertice u = new Vertice("string", 2.12);
-        animal d = new animal("joao", "coice");
+        Animal d = new Animal("joao", "coice");
         
         Grf grf = new Grf();
         
